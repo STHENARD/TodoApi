@@ -1,0 +1,19 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+<!--    <button mat-icon-button>-->
+<!--      <mat-icon (click)="sidenav.toggle()">menu</mat-icon>-->
+<!--    </button>-->
+    <h1>Angular TODOs</h1>
+    <span class="menu-spacer"></span>
+    <div>
+      <a mat-button [routerLink]="'/todos'"> Todos </a>
+      <a mat-button [routerLink]="'create'"> Create Todo </a>
+      <a mat-button [routerLink]="'/login'"><mat-icon>logout</mat-icon> Logout </a>
+
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

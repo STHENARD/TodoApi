@@ -1,0 +1,13 @@
+<h1>Create todo</h1>
+<form [formGroup]="formGroup" (submit)="onSubmit()">
+  <div>
+    <mat-form-field class="example-full-width">
+      <mat-label>Todo name</mat-label>
+      <input matInput placeholder="Ex. Test" formControlName="name" [required]="true">
+    </mat-form-field>
+  </div>
+
+  <a mat-button [routerLink]="['../']">Cancel</a>
+  <button mat-raised-button color="primary">Create</button>
+
+</form>

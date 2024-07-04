@@ -1,0 +1,15 @@
+:host {
+  display: block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.login {
+  width: 200px;
+  margin: auto;
+  text-align: center;
+  padding: 50px;
+  background-color: #3fce3f;
+  margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
+  transform: translateY(-50%);
+}

@@ -1,0 +1,20 @@
+
+<h1>Update todo</h1>
+<form [formGroup]="formGroup" (submit)="onSubmit()">
+  <div>
+    <mat-form-field class="example-full-width">
+      <mat-label>Todo name</mat-label>
+      <input matInput placeholder="Ex. Test" formControlName="name" [required]="true">
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-checkbox formControlName="isComplete">
+      Is complete
+    </mat-checkbox>
+  </div>
+
+  <div style="margin-top: 20px">
+    <a mat-button [routerLink]="['../../']">Cancel</a>
+    <button mat-raised-button color="primary">Update</button>
+  </div>
+</form>
